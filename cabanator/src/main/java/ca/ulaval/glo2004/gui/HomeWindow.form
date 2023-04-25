@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ca.ulaval.glo2004.gui.HomeWindow">
+  <grid id="27dc6" binding="panneauPrincipal" custom-create="true" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="848" height="715"/>
+    </constraints>
+    <properties>
+      <background color="-14869219"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="9f9e" binding="panneauAccueil" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-7566196"/>
+        </properties>
+        <border type="empty">
+          <size top="0" left="45" bottom="10" right="45"/>
+        </border>
+        <children>
+          <component id="d51e2" class="javax.swing.JLabel" binding="texteTitre">
+            <constraints border-constraint="North"/>
+            <properties>
+              <font name="Dubai" size="48" style="1"/>
+              <foreground color="-14869219"/>
+              <horizontalAlignment value="0"/>
+              <text resource-bundle="titres" key="Titre"/>
+            </properties>
+          </component>
+          <grid id="e886e" binding="panneauCredits" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-7566196"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="fc83c" class="javax.swing.JLabel" binding="texteUniversite">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <font name="Dubai" size="16" style="0"/>
+                  <foreground color="-14869219"/>
+                  <horizontalAlignment value="0"/>
+                  <text resource-bundle="titres" key="Universite"/>
+                </properties>
+              </component>
+              <component id="62fcc" class="javax.swing.JLabel" binding="texteCours">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font name="Dubai" size="16" style="0"/>
+                  <foreground color="-14869219"/>
+                  <horizontalAlignment value="0"/>
+                  <text resource-bundle="titres" key="Cours"/>
+                </properties>
+              </component>
+              <component id="6339e" class="javax.swing.JLabel" binding="texteNoms">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <font name="Dubai" size="16" style="0"/>
+                  <foreground color="-14869219"/>
+                  <horizontalAlignment value="0"/>
+                  <text resource-bundle="titres" key="Noms"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="67cdb" binding="panneauOptions" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-7566196"/>
+            </properties>
+            <border type="empty">
+              <size top="0" left="0" bottom="30" right="0"/>
+            </border>
+            <children>
+              <grid id="b0d88" binding="panneauCreer" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <background color="-7566196"/>
+                </properties>
+                <border type="empty">
+                  <size top="0" left="0" bottom="30" right="0"/>
+                </border>
+                <children>
+                  <component id="4b61e" class="javax.swing.JButton" binding="boutonCreer">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <background color="-3421237"/>
+                      <font name="Dubai" size="24" style="0"/>
+                      <foreground color="-14869219"/>
+                      <icon value="icons/new-50px.png"/>
+                      <text resource-bundle="titres" key="CreerProjet"/>
+                    </properties>
+                  </component>
+                  <component id="92735" class="javax.swing.JLabel" binding="texteEntrezDimensions">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font name="Dubai" size="24" style="0"/>
+                      <foreground color="-14869219"/>
+                      <horizontalAlignment value="0"/>
+                      <text resource-bundle="titres" key="EntrezDimensions"/>
+                    </properties>
+                  </component>
+                  <grid id="34f28" binding="panneauDimensions" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-7566196"/>
+                    </properties>
+                    <border type="empty">
+                      <size top="0" left="0" bottom="15" right="0"/>
+                    </border>
+                    <children>
+                      <component id="c61af" class="ca.ulaval.glo2004.gui.Tableau.TableauDeuxColonnes" binding="tableauDimensions">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <font name="Dubai" size="22" style="0"/>
+                          <foreground color="-14869219"/>
+                          <gridColor color="-3421237"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="77be2" class="javax.swing.JSeparator" binding="separateur">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-14869219"/>
+                  <foreground color="-14869219"/>
+                </properties>
+              </component>
+              <grid id="3508b" binding="panneauOuvrir" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-7566196"/>
+                </properties>
+                <border type="empty">
+                  <size top="30" left="0" bottom="0" right="0"/>
+                </border>
+                <children>
+                  <component id="b3b2" class="javax.swing.JButton" binding="boutonOuvrir">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-3421237"/>
+                      <font name="Dubai" size="24" style="0"/>
+                      <foreground color="-14869219"/>
+                      <icon value="icons/open-50px.png"/>
+                      <text resource-bundle="titres" key="OuvrirProjet"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

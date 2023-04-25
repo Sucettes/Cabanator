@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ca.ulaval.glo2004.gui.MainWindow">
+  <grid id="27dc6" binding="panneauPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="217" y="20" width="876" height="634"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a3102" binding="panneauConfiguration" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-7566196"/>
+        </properties>
+        <border type="empty">
+          <size top="5" left="20" bottom="20" right="20"/>
+        </border>
+        <children>
+          <grid id="d44fd" binding="panneauTitre" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-7566196"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="70258" class="javax.swing.JLabel" binding="texteNomProjet">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <font name="Dubai" size="36" style="1"/>
+                  <foreground color="-14869219"/>
+                  <text value="Nom du projet ouvert ici"/>
+                </properties>
+              </component>
+              <grid id="90332" binding="panneauBoutons" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-7566196"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e6018" class="javax.swing.JLabel" binding="iconeAccueil" custom-create="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="ac44b" class="javax.swing.JLabel" binding="iconeEnregistrer" custom-create="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="4c2b5" class="javax.swing.JLabel" binding="iconeExporter" custom-create="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="75753" class="javax.swing.JLabel" binding="iconeMateriaux" custom-create="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="dde24" class="javax.swing.JLabel" binding="iconeAnnuler" custom-create="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="a149c" class="javax.swing.JLabel" binding="iconeRetablir" custom-create="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="7435d" binding="panneauProprietes" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-7566196"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="de49d" binding="panneauDimensions" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <background color="-7566196"/>
+                </properties>
+                <border type="empty">
+                  <size top="0" left="0" bottom="0" right="0"/>
+                </border>
+                <children>
+                  <component id="ee336" class="javax.swing.JLabel" binding="texteDimensions">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font name="Dubai" size="24" style="1"/>
+                      <foreground color="-14869219"/>
+                      <text resource-bundle="titres" key="DimensionsCabanon"/>
+                    </properties>
+                  </component>
+                  <component id="b016a" class="ca.ulaval.glo2004.gui.Tableau.TableauDeuxColonnes" binding="tableauDimensions">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <font name="Dubai" size="22" style="0"/>
+                      <foreground color="-14869219"/>
+                      <gridColor color="-3421237"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="a11a2" binding="panneauPlanches" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-7566196"/>
+                </properties>
+                <border type="empty">
+                  <size top="25" left="0" bottom="0" right="0"/>
+                </border>
+                <children>
+                  <component id="ca476" class="javax.swing.JLabel" binding="textePlanches">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font name="Dubai" size="24" style="1"/>
+                      <foreground color="-14869219"/>
+                      <text resource-bundle="titres" key="Planches"/>
+                    </properties>
+                  </component>
+                  <grid id="481d4" binding="tableauxPlanches" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="729c0" class="ca.ulaval.glo2004.gui.Tableau.TableauIconeColonne" binding="tableauPlanches" custom-create="true">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <background color="-7566196"/>
+                          <font name="Dubai" size="22" style="0"/>
+                          <foreground color="-14869219"/>
+                          <gridColor color="-3421237"/>
+                        </properties>
+                      </component>
+                      <component id="1322b" class="ca.ulaval.glo2004.gui.Tableau.TableauDeuxColonnes" binding="tableauCoutTotal">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <background color="-7566196"/>
+                          <font name="Dubai" size="22" style="0"/>
+                          <foreground color="-14869219"/>
+                          <gridColor color="-3421237"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="cfdd7" binding="panneauVueEnsemble" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none">
+          <size top="50" left="50" bottom="5" right="5"/>
+          <color color="-7566196"/>
+        </border>
+        <children>
+          <grid id="3da91" binding="panneauEntete" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-7566196"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3b66b" class="javax.swing.JLabel" binding="texteVueEnsemble">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <enabled value="true"/>
+                  <font name="Dubai" size="30" style="0"/>
+                  <foreground color="-14869219"/>
+                  <text resource-bundle="titres" key="VueEnsemble"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="f7c05" class="ca.ulaval.glo2004.gui.PanneauDessin" binding="panneauDessin">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-14869219"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

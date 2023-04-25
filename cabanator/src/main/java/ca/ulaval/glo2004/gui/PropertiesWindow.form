@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ca.ulaval.glo2004.gui.PropertiesWindow">
+  <grid id="27dc6" binding="panneauPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="217" y="20" width="876" height="1640"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a3102" binding="panneauConfiguration" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-7566196"/>
+        </properties>
+        <border type="empty">
+          <size top="10" left="20" bottom="20" right="20"/>
+        </border>
+        <children>
+          <component id="70258" class="javax.swing.JLabel" binding="texteRetour">
+            <constraints border-constraint="North"/>
+            <properties>
+              <font name="Dubai" size="26" style="1"/>
+              <foreground color="-14869219"/>
+              <icon value="icons/back-50px.png"/>
+              <text resource-bundle="titres" key="RetourVueEnsemble"/>
+            </properties>
+          </component>
+          <grid id="e42a7" binding="panneauEdition" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-7566196"/>
+            </properties>
+            <border type="none">
+              <size top="0" left="0" bottom="0" right="0"/>
+            </border>
+            <children>
+              <grid id="de49d" binding="panneauProprietes" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <background color="-7566196"/>
+                </properties>
+                <border type="none">
+                  <size top="0" left="0" bottom="0" right="0"/>
+                </border>
+                <children>
+                  <component id="ee336" class="javax.swing.JLabel" binding="texteProprietes">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font name="Dubai" size="24" style="1"/>
+                      <foreground color="-14869219"/>
+                      <text resource-bundle="titres" key="Proprietes"/>
+                    </properties>
+                  </component>
+                  <component id="b016a" class="ca.ulaval.glo2004.gui.Tableau.TableauDeuxColonnes" binding="tableauProprietes">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-7566196"/>
+                      <font name="Dubai" size="22" style="0"/>
+                      <foreground color="-14869219"/>
+                      <gridColor color="-3421237"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="1e0e7" binding="panneauCentral" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-7566196"/>
+                  <enabled value="true"/>
+                  <visible value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="5b381" binding="panneauAccessoires" layout-manager="GridBagLayout">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-7566196"/>
+                      <visible value="true"/>
+                    </properties>
+                    <border type="none">
+                      <size top="0" left="0" bottom="0" right="0"/>
+                    </border>
+                    <children>
+                      <grid id="657fc" binding="panneauEntremises" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-7566196"/>
+                        </properties>
+                        <border type="empty">
+                          <size top="25" left="0" bottom="0" right="0"/>
+                        </border>
+                        <children>
+                          <component id="cd53b" class="javax.swing.JLabel" binding="texteEntremises">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <font name="Dubai" size="24" style="1"/>
+                              <foreground color="-14869219"/>
+                              <icon value="icons/plus-50px.png"/>
+                              <text resource-bundle="titres" key="Entremises"/>
+                            </properties>
+                          </component>
+                          <scrollpane id="15c9d" binding="listeEntremises">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <horizontalScrollBarPolicy value="31"/>
+                              <minimumSize width="0" height="80"/>
+                              <preferredSize width="0" height="150"/>
+                            </properties>
+                            <border type="none"/>
+                            <children>
+                              <grid id="d9ecf" binding="panneauListeEntremises" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                                <constraints/>
+                                <properties>
+                                  <background color="-3421237"/>
+                                </properties>
+                                <border type="empty">
+                                  <size top="10" left="20" bottom="10" right="20"/>
+                                </border>
+                                <children/>
+                              </grid>
+                            </children>
+                          </scrollpane>
+                          <component id="2fb23" class="javax.swing.JLabel" binding="texteSupprimerEntremises">
+                            <constraints border-constraint="South"/>
+                            <properties>
+                              <font name="Dubai" size="16" style="0"/>
+                              <foreground color="-14869219"/>
+                              <text resource-bundle="titres" key="SupprimerEntremise"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="aaa1e" binding="panneauFenetres" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-7566196"/>
+                        </properties>
+                        <border type="empty">
+                          <size top="25" left="0" bottom="0" right="0"/>
+                        </border>
+                        <children>
+                          <component id="14956" class="javax.swing.JLabel" binding="texteFenetres">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <font name="Dubai" size="24" style="1"/>
+                              <foreground color="-14869219"/>
+                              <icon value="icons/plus-50px.png"/>
+                              <text resource-bundle="titres" key="Fenetres"/>
+                            </properties>
+                          </component>
+                          <scrollpane id="9fa7c" binding="listeFenetres">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <horizontalScrollBarPolicy value="31"/>
+                              <minimumSize width="0" height="80"/>
+                              <preferredSize width="0" height="150"/>
+                            </properties>
+                            <border type="none"/>
+                            <children>
+                              <grid id="b87a8" binding="panneauListeFenetres" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                                <constraints/>
+                                <properties>
+                                  <background color="-3421237"/>
+                                </properties>
+                                <border type="empty">
+                                  <size top="10" left="20" bottom="10" right="20"/>
+                                </border>
+                                <children/>
+                              </grid>
+                            </children>
+                          </scrollpane>
+                        </children>
+                      </grid>
+                      <grid id="a515d" binding="panneauPortes" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-7566196"/>
+                        </properties>
+                        <border type="empty">
+                          <size top="25" left="0" bottom="0" right="0"/>
+                        </border>
+                        <children>
+                          <component id="34431" class="javax.swing.JLabel" binding="textePortes">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <font name="Dubai" size="24" style="1"/>
+                              <foreground color="-14869219"/>
+                              <icon value="icons/plus-50px.png"/>
+                              <text resource-bundle="titres" key="Portes"/>
+                            </properties>
+                          </component>
+                          <scrollpane id="8569b" binding="listePortes">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <horizontalScrollBarPolicy value="31"/>
+                              <minimumSize width="0" height="80"/>
+                              <preferredSize width="0" height="150"/>
+                            </properties>
+                            <border type="none"/>
+                            <children>
+                              <grid id="29940" binding="panneauListePortes" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                                <constraints/>
+                                <properties>
+                                  <background color="-3421237"/>
+                                </properties>
+                                <border type="empty">
+                                  <size top="10" left="20" bottom="10" right="20"/>
+                                </border>
+                                <children/>
+                              </grid>
+                            </children>
+                          </scrollpane>
+                        </children>
+                      </grid>
+                      <grid id="44a41" binding="panneauLignesEntremises" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="0.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-7566196"/>
+                        </properties>
+                        <border type="empty">
+                          <size top="25" left="0" bottom="0" right="0"/>
+                        </border>
+                        <children>
+                          <component id="633af" class="javax.swing.JLabel" binding="texteLignesEntremises">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <font name="Dubai" size="24" style="1"/>
+                              <foreground color="-14869219"/>
+                              <icon value="icons/plus-50px.png"/>
+                              <text resource-bundle="titres" key="LignesEntremises"/>
+                            </properties>
+                          </component>
+                          <scrollpane id="b3763" binding="listeLignesEntremises">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <horizontalScrollBarPolicy value="31"/>
+                              <minimumSize width="0" height="430"/>
+                              <preferredSize width="0" height="640"/>
+                            </properties>
+                            <border type="none"/>
+                            <children>
+                              <grid id="e55f" binding="panneauListeLignesEntremises" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+                                <constraints/>
+                                <properties>
+                                  <background color="-3421237"/>
+                                </properties>
+                                <border type="empty">
+                                  <size top="10" left="20" bottom="10" right="20"/>
+                                </border>
+                                <children/>
+                              </grid>
+                            </children>
+                          </scrollpane>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="1a98" binding="panneauTypeLinteau" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <background color="-3421237"/>
+                      <visible value="false"/>
+                    </properties>
+                    <border type="empty">
+                      <size top="10" left="10" bottom="10" right="0"/>
+                    </border>
+                    <children>
+                      <component id="b283f" class="javax.swing.JLabel" binding="texteTypeLinteau">
+                        <constraints/>
+                        <properties>
+                          <font name="Dubai" size="22" style="0"/>
+                          <foreground color="-14869219"/>
+                          <text resource-bundle="titres" key="TypeLinteau"/>
+                        </properties>
+                      </component>
+                      <component id="41b90" class="javax.swing.JComboBox" binding="selectionTypeLinteau">
+                        <constraints/>
+                        <properties>
+                          <background color="-3421237"/>
+                          <font name="Dubai" size="22" style="0"/>
+                          <model>
+                            <item value="2x4"/>
+                            <item value="2x6"/>
+                            <item value="2x8"/>
+                            <item value="2x10"/>
+                          </model>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="99fc5" binding="panneauBoutons" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-7566196"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="62806" class="javax.swing.JButton" binding="boutonSupprimer">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-3421237"/>
+                      <font name="Dubai" size="24" style="1"/>
+                      <foreground color="-14869219"/>
+                      <text resource-bundle="titres" key="Supprimer"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="47a10" class="javax.swing.JButton" binding="boutonVueFaceToit">
+                    <constraints border-constraint="West"/>
+                    <properties>
+                      <background color="-3421237"/>
+                      <font name="Dubai" size="24" style="1"/>
+                      <foreground color="-14869219"/>
+                      <text resource-bundle="titres" key="VueFace"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="24347" class="javax.swing.JButton" binding="boutonVueDessusToit">
+                    <constraints border-constraint="East"/>
+                    <properties>
+                      <background color="-3421237"/>
+                      <font name="Dubai" size="24" style="1"/>
+                      <foreground color="-14869219"/>
+                      <text resource-bundle="titres" key="VueDessus"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="cfdd7" binding="panneauVue" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none">
+          <size top="50" left="50" bottom="5" right="5"/>
+        </border>
+        <children>
+          <component id="f7c05" class="ca.ulaval.glo2004.gui.PanneauDessin" binding="panneauDessin">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-14869219"/>
+            </properties>
+          </component>
+          <grid id="ee648" binding="panneauEntete" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-7566196"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="eb658" class="javax.swing.JLabel" binding="texteVue">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <enabled value="true"/>
+                  <font name="Dubai" size="30" style="0"/>
+                  <foreground color="-14869219"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
